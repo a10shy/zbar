@@ -648,13 +648,13 @@ int main(int _argc, char **_argv)
     return EXIT_FAILURE;
   }
 
-  fin = fopen(filename, "rb");
-  if (!fin) {
-    fprintf(stderr, "Error: Unable to open file.\n");
-    return EXIT_FAILURE;
-  }
-  image_read_png(&img, &width, &height, fin);
-  fclose(fin);
+  // fin = fopen(filename, "rb");
+  // if (!fin) {
+  //   fprintf(stderr, "Error: Unable to open file.\n");
+  //   return EXIT_FAILURE;
+  // }
+  // image_read_png(&img, &width, &height, fin);
+  // fclose(fin);
     }
     qr_binarize(img, width, height);
     /*{
